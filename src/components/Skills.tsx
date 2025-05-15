@@ -1,5 +1,11 @@
 import "../CSS/Skills.css"
 
+const SkillCard = ({ skill }: { skill: string }) => (
+  <div className="Skill-Array">
+    <p className="item">{skill}</p>
+  </div>
+);
+
 const Skills = () => {
   return (
     <div className="Skills-Container">
@@ -42,10 +48,5 @@ const Skills = () => {
   );
 };
 
-const SkillCard = ({ skill }: { skill: string }) => (
-  <div className="Skill-Array">
-    <p className="item">{skill}</p>
-  </div>
-);
 
 export default Skills;
