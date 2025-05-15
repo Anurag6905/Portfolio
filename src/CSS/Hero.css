@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Hero {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Hero-container {
+    width: 55vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.Hero-title {
+    margin-top: 0.8rem;
+    font-size: 3rem;
+    color: rgb(13, 162, 155);
+    font-weight: 800;
+    animation: slideUp 2s;
+}
+
+.Hero-Description {
+    margin-top: 0.8rem;
+    width: 80%;
+    height: auto;
+    font-size: 1rem;
+    color: aliceblue;
+    animation: slideUp 2s;
+}
+
+.Hero-btn {
+    margin-top: 1.4rem;
+    width: 60vw;
+    height: auto;
+    display: inline;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn-projects {
+    width: 9rem;
+    height: 3rem;
+    color: white;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid aliceblue;
+    font-size: 1rem;
+    transition: 0.4s ease-in-out;
+    animation: slideUp 2s;
+}
+
+.btn-resume {
+    margin-left: 20px;
+    width: 12rem;
+    height: 3rem;
+    color: white;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid aliceblue;
+    font-size: 1rem;
+    transition: 0.4s ease-in-out;
+    animation: slideUp 2s;
+}
+
+.btn-projects:hover , .btn-resume:hover{
+    scale: 1.05;
+    color: rgb(13, 162, 155);
+    cursor: pointer;
+}
+
+.photo {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.face {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: url("me3.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 1rem rgba(206, 79, 79, 0.847);
+    animation: Flash 2s;
+    transition: 2s ease-in-out;
+}
+
+.face:hover {
+    cursor: pointer;
+    
+}
+
+@keyframes slideUp {
+    0% {
+      transform: translateY(200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes Flash {
+    0% {
+      scale: 0.2;
+      opacity: 0;
+    }
+    100% {
+      scale:1;
+      opacity: 1;
+    }
+  }
+
+@media (max-width:740px) {
+    .Hero {
+        padding-left: 2rem;
+    }
+    .photo {
+        width: 250px;
+        height: 300px;
+    }
+
+    .face {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Hero-title {
+        font-size: 2rem;
+    }
+
+    .Hero-Description {
+        font-size: 0.7rem;
+    }
+
+    .btn-projects {
+        width: 7rem;
+        height: 2rem;
+        font-size: 0.7rem;
+    }
+
+    .btn-resume {
+        width: 9rem;
+        height: 2rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .Hero-title {
+        font-size: 1.4rem;
+    }
+
+    .photo {
+        width: 150px;
+        height: 200px;
+    }
+
+    .face {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 500px) {
+    .btn-projects {
+        width: 5rem;
+        height: 2rem;
+        font-size: 0.5rem;
+    }
+
+    .btn-resume {
+        width: 7rem;
+        height: 2rem;
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .photo {
+        width: 150px;
+        height: 200px;
+    }
+
+    .face {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 390px) {
+    .Hero {
+        padding-left: 2rem;
+    }
+
+    .btn-projects {
+        width: 5rem;
+        height: 2rem;
+        font-size: 0.4rem;
+    }
+
+    .btn-resume {
+        width: 6rem;
+        height: 2rem;
+        font-size: 0.4rem;
+    }
+}
