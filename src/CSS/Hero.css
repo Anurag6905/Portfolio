@@ -154,12 +154,14 @@
         width: 7rem;
         height: 2rem;
         font-size: 0.7rem;
+        border: 1px solid white;
     }
 
     .btn-resume {
         width: 9rem;
         height: 2rem;
         font-size: 0.7rem;
+        border: 1px solid white;
     }
 }
 

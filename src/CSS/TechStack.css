@@ -3,12 +3,13 @@
     padding-bottom: 2rem;
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
   
 .techstack-heading {
     font-size: 48px;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color:rgb(13, 162, 155);
     animation: slideUp 3s ease-in;
     animation-timeline: view();
@@ -112,10 +113,18 @@
 }
 
 @media (max-width:450px) {
+    .techstack-section {
+        height: 550px;
+    }
    
     .techstack-grid {
         grid-template-columns: repeat(auto-fit, minmax(80px, 3fr));
         scale:0.8;
+    }
+
+    .techstack-heading {
+        position: relative;
+        bottom: -20px;
     }
 }
 
