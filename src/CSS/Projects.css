@@ -58,14 +58,11 @@
     animation-range: entry 0 cover 50%;
 }
 
-/* .Box:hover {
-    scale:1.02;
-    cursor: pointer;
-} */
 .Box:hover {
     transform: scale(1.03) rotateX(6deg) rotateY(6deg);
     box-shadow: 0 20px 40px rgba(9, 167, 167, 0.3), 0 8px 20px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(0, 255, 255, 0.3);
+    cursor: pointer;
 }
 
 .Box-photo {
