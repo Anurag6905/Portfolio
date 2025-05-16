@@ -3,7 +3,7 @@ import '../CSS/TechStack.css';
 
 const techStack = [
   { name: 'React', icon: './public/react.png' },
-  { name: 'TypeScript', icon: './public/Tsx.png' },
+  { name: 'TypeScript', icon: './public/tsx.png' },
   // { name: 'Node.js', icon: './public/Nodejs.png' },
   // { name: 'MongoDB', icon: './public/mongoDB.png' },
   // { name: 'Java', icon: './public/java.png' },
@@ -13,7 +13,7 @@ const techStack = [
   { name: 'JavaScript', icon: './public/js1.png' },
   { name: 'CSS', icon: './public/css-removebg-preview.png' },
   { name: 'HTML', icon: './public/html-removebg-preview.png' },
-  { name: 'C++', icon: './public/C++.png' },
+  { name: 'C++', icon: './public/c++.png' },
   { name: 'GitHub', icon: './public/github.jpg' },
   { name: 'Canva', icon: './public/canva-removebg-preview.png' },
   { name: 'Figma', icon: './public/figma.png' },

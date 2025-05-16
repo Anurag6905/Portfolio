@@ -1,137 +1,137 @@
 
-import '../CSS/PhotoGallery2.css';
+import '../CSS/photoGallery2.css';
 
 const photos = [
   {
-    url: './public/P3.jpg',
+    url: './public/p3.jpg',
     caption: 'A Beautiful coast – Konkan',
   },
   {
-    url: './public/P4.jpg',
+    url: './public/p4.jpg',
     caption: 'Rainy road',
   },
   {
-    url: './public/P5.jpg',
+    url: './public/p5.jpg',
     caption: 'Damp Road',
   },
   {
-    url: './public/P6.jpg',
+    url: './public/p6.jpg',
     caption: 'Rainy Reflection',
   },
   {
-    url: './public/P8.jpg',
+    url: './public/p8.jpg',
     caption: 'Falling Drops',
   },
   {
-    url: './public/P10.jpg',
+    url: './public/p10.jpg',
     caption: 'Greenish path',
   },
   {
-    url: './public/P11.jpg',
+    url: './public/p11.jpg',
     caption: 'Diwali Decor',
   },
   {
-    url: './public/P12.jpg',
-    caption: 'Silent Path',
+    url: './public/p12.jpg',
+    caption: 'Silent path',
   },
   {
-    url: './public/P13.jpg',
+    url: './public/p13.jpg',
     caption: 'Waterfall - Imagica',
   },
   {
-    url: '/public/P14.jpg',
+    url: '/public/p14.jpg',
     caption: 'Marine Drive',
   },
   {
-    url: './public/P15.jpg',
+    url: './public/p15.jpg',
     caption: 'Bombay Stock Exchange',
   },
   {
-    url: './public/P18.jpg',
+    url: './public/p18.jpg',
     caption: 'TTMM - E-Summit',
   },
   {
-    url: './public/P20.jpg',
+    url: './public/p20.jpg',
     caption: 'Concert - Mood Indigo',
   },
   {
-    url: './public/P21.jpg',
+    url: './public/p21.jpg',
     caption: 'firefly lighting',
   },
   {
-    url: './public/P22.jpg',
+    url: './public/p22.jpg',
     caption: 'Inception',
   },
   {
-    url: './public/P23.jpg',
+    url: './public/p23.jpg',
     caption: 'Beach Cricket',
   },
   {
-    url: './public/P24.jpg',
+    url: './public/p24.jpg',
     caption: 'Sunset',
   },
   {
-    url: './public/P25.jpg',
+    url: './public/p25.jpg',
     caption: 'Kasheli Beach',
   },
   {
-    url: './public/P26.jpg',
+    url: './public/p26.jpg',
     caption: 'Hometown',
   },
   {
-    url: './public/P27.jpg',
+    url: './public/p27.jpg',
     caption: 'Vasai-Virar',
   },
   {
-    url: './public/P28.jpg',
+    url: './public/p28.jpg',
     caption: 'Hostel Road',
   },
   {
-    url: './public/P29.jpg',
+    url: './public/p29.jpg',
     caption: 'Creativity at its peak',
   },
   {
-    url: './public/P32.jpg',
+    url: './public/p32.jpg',
     caption: 'Lumma Cafe',
   },
   {
-    url: './public/P33.jpg',
-    caption: 'Peace',
+    url: './public/p33.jpg',
+    caption: 'peace',
   },
   {
-    url: './public/P35.jpg',
+    url: './public/p35.jpg',
     caption: 'Contrast',
   },
   {
-    url: './public/P36.jpg',
+    url: './public/p36.jpg',
     caption: 'Tatva Restraunt',
   },
   {
-    url: './public/P37.jpg',
+    url: './public/p37.jpg',
     caption: 'Chrismas Tree',
   },
   {
-    url: './public/P38.jpg',
+    url: './public/p38.jpg',
     caption: 'Insti Road',
   },
   {
-    url: './public/P41.jpg',
+    url: './public/p41.jpg',
     caption: 'Riverfront - Kota',
   },
   {
-    url: './public/P43.jpg',
-    caption: 'Strawbeery - Panchgani',
+    url: './public/p43.jpg',
+    caption: 'Strawbeery - panchgani',
   },
   {
-    url: './public/P45.jpg',
+    url: './public/p45.jpg',
     caption: '7 Wonders -Kota',
   },
 ];
 
-const PhotoGallery2 = () => {
+const photoGallery2 = () => {
   return (
     <section className="gallery-section2">
-      {/* <h2 className="gallery-heading2">Photography Gallery</h2> */}
+      {/* <h2 className="gallery-heading2">photography Gallery</h2> */}
       <div className="gallery-grid2">
         {photos.map((photo, index) => (
           <div className="gallery-card2" key={index}>
@@ -144,4 +144,4 @@ const PhotoGallery2 = () => {
   );
 };
 
-export default PhotoGallery2;
+export default photoGallery2;

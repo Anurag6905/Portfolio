@@ -1,61 +1,61 @@
 
-import '../CSS/PhotoGallery.css';
+import '../CSS/photoGallery.css';
 
 const photos = [
   {
-    url: './public/P16.jpg',
-    caption: 'A Stunning Performance – TechFest',
+    url: './public/p16.jpg',
+    caption: 'A Stunning performance – TechFest',
   },
   {
-    url: './public/P17.jpg',
+    url: './public/p17.jpg',
     caption: 'Armaan Malik Concert – Mood Indigo',
   },
   {
-    url: './public/P19.jpg',
+    url: './public/p19.jpg',
     caption: 'Kabir Cafe Band at Mood Indigo',
   },
   {
-    url: './public/P2.jpg',
+    url: './public/p2.jpg',
     caption: 'EDM Night – Techfest',
   },
   {
-    url: './public/P30.jpg',
+    url: './public/p30.jpg',
     caption: 'Sportlights',
   },
   {
-    url: './public/P31.jpg',
+    url: './public/p31.jpg',
     caption: 'Mood Indigo',
   },
   {
-    url: './public/P1.jpg',
+    url: './public/p1.jpg',
     caption: 'Bombay Skyline',
   },
   {
-    url: './public/P44.jpg',
+    url: './public/p44.jpg',
     caption: 'Sahyadri',
   },
   {
-    url: './public/P42.jpg',
+    url: './public/p42.jpg',
     caption: 'Ellipse - Kota',
   },
   {
-    url: './public/P39.jpg',
+    url: './public/p39.jpg',
     caption: 'Juhu Beach',
   },
   {
-    url: './public/P46.jpg',
+    url: './public/p46.jpg',
     caption: 'Sea meets the sky',
   },
   {
-    url: './public/P47.jpg',
+    url: './public/p47.jpg',
     caption: 'Mahabaleshwar',
   },
 ];
 
-const PhotoGallery = () => {
+const photoGallery = () => {
   return (
     <section className="gallery-section">
-      <h2 className="gallery-heading">Photography</h2>
+      <h2 className="gallery-heading">photography</h2>
       <div className="gallery-grid">
         {photos.map((photo, index) => (
           <div className="gallery-card" key={index}>
@@ -68,4 +68,4 @@ const PhotoGallery = () => {
   );
 };
 
-export default PhotoGallery;
+export default photoGallery;
