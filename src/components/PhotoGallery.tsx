@@ -3,51 +3,51 @@ import '../CSS/PhotoGallery.css';
 
 const photos = [
   {
-    url: '/public/P16.jpg',
+    url: './public/P16.jpg',
     caption: 'A Stunning Performance – TechFest',
   },
   {
-    url: '/public/P17.jpg',
+    url: './public/P17.jpg',
     caption: 'Armaan Malik Concert – Mood Indigo',
   },
   {
-    url: '/public/P19.jpg',
+    url: './public/P19.jpg',
     caption: 'Kabir Cafe Band at Mood Indigo',
   },
   {
-    url: '/public/P2.jpg',
+    url: './public/P2.jpg',
     caption: 'EDM Night – Techfest',
   },
   {
-    url: '/public/P30.jpg',
+    url: './public/P30.jpg',
     caption: 'Sportlights',
   },
   {
-    url: '/public/P31.jpg',
+    url: './public/P31.jpg',
     caption: 'Mood Indigo',
   },
   {
-    url: '/public/P1.jpg',
+    url: './public/P1.jpg',
     caption: 'Bombay Skyline',
   },
   {
-    url: '/public/P44.jpg',
+    url: './public/P44.jpg',
     caption: 'Sahyadri',
   },
   {
-    url: '/public/P42.jpg',
+    url: './public/P42.jpg',
     caption: 'Ellipse - Kota',
   },
   {
-    url: '/public/P39.jpg',
+    url: './public/P39.jpg',
     caption: 'Juhu Beach',
   },
   {
-    url: '/public/P46.jpg',
+    url: './public/P46.jpg',
     caption: 'Sea meets the sky',
   },
   {
-    url: '/public/P47.jpg',
+    url: './public/P47.jpg',
     caption: 'Mahabaleshwar',
   },
 ];
