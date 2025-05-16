@@ -3,51 +3,51 @@ import '../CSS/PhotoGallery.css';
 
 const photos = [
   {
-    src: '/public/P16.jpg',
+    url: '/public/P16.jpg',
     caption: 'A Stunning Performance – TechFest',
   },
   {
-    src: '/public/P17.jpg',
+    url: '/public/P17.jpg',
     caption: 'Armaan Malik Concert – Mood Indigo',
   },
   {
-    src: '/public/P19.jpg',
+    url: '/public/P19.jpg',
     caption: 'Kabir Cafe Band at Mood Indigo',
   },
   {
-    src: '/public/P2.jpg',
+    url: '/public/P2.jpg',
     caption: 'EDM Night – Techfest',
   },
   {
-    src: '/public/P30.jpg',
+    url: '/public/P30.jpg',
     caption: 'Sportlights',
   },
   {
-    src: '/public/P31.jpg',
+    url: '/public/P31.jpg',
     caption: 'Mood Indigo',
   },
   {
-    src: '/public/P1.jpg',
+    url: '/public/P1.jpg',
     caption: 'Bombay Skyline',
   },
   {
-    src: '/public/P44.jpg',
+    url: '/public/P44.jpg',
     caption: 'Sahyadri',
   },
   {
-    src: '/public/P42.jpg',
+    url: '/public/P42.jpg',
     caption: 'Ellipse - Kota',
   },
   {
-    src: '/public/P39.jpg',
+    url: '/public/P39.jpg',
     caption: 'Juhu Beach',
   },
   {
-    src: '/public/P46.jpg',
+    url: '/public/P46.jpg',
     caption: 'Sea meets the sky',
   },
   {
-    src: '/public/P47.jpg',
+    url: '/public/P47.jpg',
     caption: 'Mahabaleshwar',
   },
 ];
@@ -59,7 +59,7 @@ const PhotoGallery = () => {
       <div className="gallery-grid">
         {photos.map((photo, index) => (
           <div className="gallery-card" key={index}>
-            <img src={photo.src} className="gallery-image" />
+            <img src={photo.url} className="gallery-image"/>
             <p className="gallery-caption">{photo.caption}</p>
           </div>
         ))}
