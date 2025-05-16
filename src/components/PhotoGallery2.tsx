@@ -1,5 +1,5 @@
 
-import '../CSS/photoGallery2.css';
+import '../CSS/PhotoGallery2.css';
 
 const photos = [
   {
