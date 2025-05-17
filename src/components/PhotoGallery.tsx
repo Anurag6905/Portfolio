@@ -3,51 +3,51 @@ import '../CSS/PhotoGallery.css';
 
 const photos = [
   {
-    url: './public/p16.jpg',
+    url: '/p16.jpg',
     caption: 'A Stunning performance – TechFest',
   },
   {
-    url: './public/p17.jpg',
+    url: '/p17.jpg',
     caption: 'Armaan Malik Concert – Mood Indigo',
   },
   {
-    url: './public/p19.jpg',
+    url: '/p19.jpg',
     caption: 'Kabir Cafe Band at Mood Indigo',
   },
   {
-    url: './public/p2.jpg',
+    url: '/p2.jpg',
     caption: 'EDM Night – Techfest',
   },
   {
-    url: './public/p30.jpg',
+    url: '/p30.jpg',
     caption: 'Sportlights',
   },
   {
-    url: './public/p31.jpg',
+    url: '/p31.jpg',
     caption: 'Mood Indigo',
   },
   {
-    url: './public/p1.jpg',
+    url: '/p1.jpg',
     caption: 'Bombay Skyline',
   },
   {
-    url: './public/p44.jpg',
+    url: '/p44.jpg',
     caption: 'Sahyadri',
   },
   {
-    url: './public/p42.jpg',
+    url: '/p42.jpg',
     caption: 'Ellipse - Kota',
   },
   {
-    url: './public/p39.jpg',
+    url: '/p39.jpg',
     caption: 'Juhu Beach',
   },
   {
-    url: './public/p46.jpg',
+    url: '/p46.jpg',
     caption: 'Sea meets the sky',
   },
   {
-    url: './public/p47.jpg',
+    url: '/p47.jpg',
     caption: 'Mahabaleshwar',
   },
 ];

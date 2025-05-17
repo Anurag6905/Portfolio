@@ -3,39 +3,39 @@ import '../CSS/PhotoGallery2.css';
 
 const photos = [
   {
-    url: './public/p3.jpg',
+    url: '/p3.jpg',
     caption: 'A Beautiful coast – Konkan',
   },
   {
-    url: './public/p4.jpg',
+    url: '/p4.jpg',
     caption: 'Rainy road',
   },
   {
-    url: './public/p5.jpg',
+    url: '/p5.jpg',
     caption: 'Damp Road',
   },
   {
-    url: './public/p6.jpg',
+    url: '/p6.jpg',
     caption: 'Rainy Reflection',
   },
   {
-    url: './public/p8.jpg',
+    url: '/p8.jpg',
     caption: 'Falling Drops',
   },
   {
-    url: './public/p10.jpg',
+    url: '/p10.jpg',
     caption: 'Greenish path',
   },
   {
-    url: './public/p11.jpg',
+    url: '/p11.jpg',
     caption: 'Diwali Decor',
   },
   {
-    url: './public/p12.jpg',
+    url: '/p12.jpg',
     caption: 'Silent path',
   },
   {
-    url: './public/p13.jpg',
+    url: '/p13.jpg',
     caption: 'Waterfall - Imagica',
   },
   {
@@ -43,87 +43,87 @@ const photos = [
     caption: 'Marine Drive',
   },
   {
-    url: './public/p15.jpg',
+    url: '/p15.jpg',
     caption: 'Bombay Stock Exchange',
   },
   {
-    url: './public/p18.jpg',
+    url: '/p18.jpg',
     caption: 'TTMM - E-Summit',
   },
   {
-    url: './public/p20.jpg',
+    url: '/p20.jpg',
     caption: 'Concert - Mood Indigo',
   },
   {
-    url: './public/p21.jpg',
+    url: '/p21.jpg',
     caption: 'firefly lighting',
   },
   {
-    url: './public/p22.jpg',
+    url: '/p22.jpg',
     caption: 'Inception',
   },
   {
-    url: './public/p23.jpg',
+    url: '/p23.jpg',
     caption: 'Beach Cricket',
   },
   {
-    url: './public/p24.jpg',
+    url: '/p24.jpg',
     caption: 'Sunset',
   },
   {
-    url: './public/p25.jpg',
+    url: '/p25.jpg',
     caption: 'Kasheli Beach',
   },
   {
-    url: './public/p26.jpg',
+    url: '/p26.jpg',
     caption: 'Hometown',
   },
   {
-    url: './public/p27.jpg',
+    url: '/p27.jpg',
     caption: 'Vasai-Virar',
   },
   {
-    url: './public/p28.jpg',
+    url: '/p28.jpg',
     caption: 'Hostel Road',
   },
   {
-    url: './public/p29.jpg',
+    url: '/p29.jpg',
     caption: 'Creativity at its peak',
   },
   {
-    url: './public/p32.jpg',
+    url: '/p32.jpg',
     caption: 'Lumma Cafe',
   },
   {
-    url: './public/p33.jpg',
+    url: '/p33.jpg',
     caption: 'peace',
   },
   {
-    url: './public/p35.jpg',
+    url: '/p35.jpg',
     caption: 'Contrast',
   },
   {
-    url: './public/p36.jpg',
+    url: '/p36.jpg',
     caption: 'Tatva Restraunt',
   },
   {
-    url: './public/p37.jpg',
+    url: '/p37.jpg',
     caption: 'Chrismas Tree',
   },
   {
-    url: './public/p38.jpg',
+    url: '/p38.jpg',
     caption: 'Insti Road',
   },
   {
-    url: './public/p41.jpg',
+    url: '/p41.jpg',
     caption: 'Riverfront - Kota',
   },
   {
-    url: './public/p43.jpg',
+    url: '/p43.jpg',
     caption: 'Strawbeery - panchgani',
   },
   {
-    url: './public/p45.jpg',
+    url: '/p45.jpg',
     caption: '7 Wonders -Kota',
   },
 ];
