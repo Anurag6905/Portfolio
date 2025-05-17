@@ -39,7 +39,7 @@ const photos = [
     caption: 'Waterfall - Imagica',
   },
   {
-    url: '/public/p14.jpg',
+    url: '/p14.jpg',
     caption: 'Marine Drive',
   },
   {
