@@ -14,5 +14,13 @@ body {
     background-attachment: fixed;
 }
 
+@media (max-width:600px) {
+
+    body {
+        background: url("/public/abstract-digital-grid-black-background.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
 
 
