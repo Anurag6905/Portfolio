@@ -1,0 +1,44 @@
+.tabs {
+    background: #ffbe4e;
+    padding: 13px 0;
+    margin-top: -16px;
+  }
+  .tabs ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .tabs ul li {
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  /* Responsive for tablets and below */
+  @media (max-width: 700px) {
+    .tabs ul {
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+    .tabs ul li {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Responsive for mobile phones */
+  @media (max-width: 420px) {
+    .tabs ul {
+      gap: 8px;
+    }
+    .tabs ul li {
+      font-size: 0.9rem;
+      padding: 6px 0;
+    }
+  }
+  
+
+
+  

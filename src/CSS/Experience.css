@@ -1,319 +1,123 @@
-*{
-    margin:0;
-    padding: 0;
+.experience-section {
+    background: #fff;
+    padding: 55px 60px;
+    max-width: 1600px;
     box-sizing: border-box;
-}
-
-.Experience {
-    width: 100%;
-    height: auto;
-    padding-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.Experience-title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: rgb(13, 162, 155);
-    font-weight: 800;
-    animation: slideUp 3s ease-in;
-    animation-timeline: view();
-    animation-range: entry 0 cover 60%;
-}
-
-.Card {
-    margin-top: 0.8rem;
-    margin-bottom: 1rem;
-    padding: 1.5rem;
-    width: 90%;
-    height: auto;
-    display: flex;
-    border-radius: 25px;
-    backdrop-filter: blur(20px);
-    background: #1e1e1e;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-    position: relative;
-    overflow: hidden;
-    animation: slideUp 3s ease-in;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-
-@keyframes appear{
-    from {
-        opacity:0;
-        transform: (200%);
-    } to {
-        opacity: 1;
-        transform: (0);
-    }
-}
-
-.Card:hover {
-    transform: scale(1.03) rotateX(6deg) rotateY(6deg);
-    box-shadow: 0 20px 40px rgba(9, 167, 167, 0.3), 0 8px 20px rgba(0, 0, 0, 0.4);
-    background: #1e1e1e;
-    border: 1px solid rgba(0, 255, 255, 0.3);
-}
-
-.Card-photo {
-    margin: 0.5rem;
-    width: 40%;
-    height: auto;
-    border-radius: 25px;
-    background-color: transparent;
-}
-
-.Card-Brief {
-    width: 60%;
-    height: auto;
-    margin: 0.5rem;
-    background: #1e1e1e;
-}
-
-.Card-info {
-    display: flex;
-    width: 100%;
-    height: 20%;
-    background: #1e1e1e;
-}
-
-.Card-Description {
-    width: 100%;
-    height: 80%;
-    background: #1e1e1e;
-}
-
-.Card-title {
-    width: 80%;
-    height: auto;
-    font-size: 1.7rem;
-    font-weight: 800;
-    color: rgb(13, 162, 155);
-    background: #1e1e1e;
-}
-
-.Card-Timeline {
-    width: 30%;
-    height: auto;
-    display: flex;
-    align-items: center;
+    box-shadow: 0 6px 30px rgba(36, 65, 28, 0.15);
+  }
+  
+  .experience-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
     text-align: center;
-    font-size: 0.8rem;
-    color: aliceblue;
-    background: #1e1e1e;
-}
-
-.Description {
+    margin-bottom: 44px;
+    color: #24411c;
+  }
+  
+  .highlight-experience {
+    color: #ffbe4e;
+  }
+  
+  .experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  
+  .experience-card {
+    background: #f0ffe3;
+    padding: 26px 28px;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px #f2f2f2;
+  }
+  
+  .experience-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+  
+  .company-name {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #24411c;
+  }
+  
+  .role-period {
+    font-weight: 600;
+    color: #27871b;
     font-size: 1rem;
-    color: aliceblue;
-    background: #1e1e1e;
-}
-
-@keyframes slideUp {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+  
+  .experience-description {
+    font-size: 1rem;
+    color: #24411c;
+    line-height: 1.45;
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+  
+  .experience-description li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 12px;
+    list-style-type: disc;
+  }
+  
+  
+  /* Responsive */
+  
+  @media (max-width: 900px) {
+    .experience-section {
+      padding: 40px 28px;
+      margin: 40px 16px 0 16px;
+      border-radius: 20px;
     }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
+    .experience-section h2 {
+      font-size: 1.6rem;
+    }
+    .experience-card {
+      padding: 22px 20px;
+      border-radius: 16px;
+    }
+    .company-name {
+      font-size: 1.15rem;
+    }
+    .role-period {
+      font-size: 0.9rem;
+      white-space: normal;
+      margin-left: 0;
+      margin-top: 4px;
+      width: 100%;
     }
   }
-
-@media (max-width:1120px) {
-    .Experience-title {
-        font-size: 3rem;
+  
+  @media (max-width: 600px) {
+    .experience-section {
+      padding: 30px 14px;
+      margin: 30px 10px 0 10px;
     }
-
-    .Card-title {
-        font-size: 1.4rem;
+    .experience-section h2 {
+      font-size: 1.3rem;
     }
-
-    .Card-Timeline {
-        font-size: 0.8rem;
+    .experience-card {
+      padding: 18px 14px;
     }
-
-    .Description {
-        font-size: 0.9rem;
+    .company-name {
+      font-size: 1.05rem;
     }
-}
-
-@media (max-width:960px) {
-    .Experience-title {
-        font-size: 3rem;
+    .role-period {
+      font-size: 0.85rem;
     }
-
-    .Card-title {
-        font-size: 1.2rem;
+    .experience-description {
+      font-size: 0.9rem;
     }
+  }
+  
 
-    .Card-Timeline {
-        font-size: 0.7rem;
-    }
 
-    .Description {
-        font-size: 0.8rem;
-    }
-}
 
-@media (max-width:850px) {
-    
-    .Experience-title {
-        font-size: 2rem;
-    }
-
-    .Card-title {
-        font-size: 1rem;
-    }
-
-    .Card-Timeline {
-        font-size: 0.5rem;
-    }
-
-    .Description {
-        font-size: 0.6rem;
-    }
-}
-
-@media (max-width:720px) {
-    .Experience {
-        padding-bottom: 0.5rem;
-    }
-    
-    .Experience-title {
-        font-size: 2rem;
-    }
-
-    .Card-title {
-        font-size: 0.8rem;
-    }
-
-    .Card {
-        padding: 0.5rem;
-    }
-
-    .Card-Timeline {
-        font-size: 0.4rem;
-    }
-
-    .Description {
-        font-size: 0.5rem;
-    }
-}
-
-@media (max-width:600px) {
-    .Experience-title {
-        font-size: 1.8rem;
-    }
-
-    .Card-title {
-        font-size: 0.6rem;
-    }
-
-    .Card-Timeline {
-        font-size: 0.3rem;
-    }
-
-    .Description {
-        font-size: 0.4rem;
-    }
-
-}
-
-@media (max-width:500px) {
-    .Experience {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-top: 0rem;
-    }
-
-    .Experience-title {
-        font-size: 1.5rem;
-    }
-
-    .Card-photo {
-        border-radius: 20px;
-    }
-
-    .Card-title {
-        font-size: 0.6rem;
-    }
-
-    .Card-Timeline {
-        font-size: 0.3rem;
-    }
-
-    .Description {
-        font-size: 0.4rem;
-    }
-}
-
-@media (max-width:450px) {
-    .Experience {
-        padding-left: 0.25rem;
-        padding-right: 0.25rem;
-    }
-
-    .Experience-title {
-        font-size: 1.4rem;
-    }
-
-    .Card {
-        padding: 0.4rem;
-    }
-
-    .Card-title {
-        font-size: 0.55rem;
-    }
-
-    .Card-photo {
-        border-radius: 17px;
-    }
-
-    .Card-Timeline {
-        font-size: 0.3rem;
-    }
-
-    .Description {
-        font-size: 0.35rem;
-    }
-}
-
-@media (max-width:400px) {
-    .Experience {
-        padding-left: 0.25rem;
-        padding-right: 0.25rem;
-    }
-
-    .Experience-title {
-        font-size: 1.25rem;
-    }
-
-    .Card-photo {
-        border-radius: 15px;
-    }
-
-    .Card-title {
-        width: 85%;
-        font-size: 0.5rem;
-    }
-
-    .Card-Timeline {
-        font-size: 0.3rem;
-    }
-
-    .Description {
-        font-size: 0.3rem;
-    }
-}

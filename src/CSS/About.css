@@ -1,0 +1,120 @@
+.about {
+    display: flex;
+    align-items: center;
+    background: #24411c;
+    color: #fff;
+    padding: 48px 60px;
+    border-radius: 30px;
+    margin: 45px auto 0 auto;
+    max-width: 1200px;
+    gap: 38px;
+    box-sizing: border-box;
+  }
+  
+  .about-image-section {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-img {
+    width: 183px;
+    height: 183px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fffbe9;
+    box-shadow: 0 8px 32px #052e14b3;
+  }
+  
+  .about-content {
+    flex: 2;
+  }
+  
+  .about-highlight {
+    color: #ffbe4e;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .about-stats {
+    display: flex;
+    gap: 48px;
+    margin: 26px 0;
+  }
+  .about-stat {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .about-stat span {
+    display: block;
+    font-size: 1.35rem;
+    color: #ffbe4e;
+    font-weight: 700;
+  }
+  .about-signature {
+    font-style: italic;
+    color: #ffbe4e;
+    margin-top: 12px;
+  }
+  
+  /* ============ RESPONSIVE STYLES =========== */
+  
+  /* Tablets */
+  @media (max-width: 950px) {
+    .about {
+      flex-direction: column;
+      padding: 32px 28px;
+      gap: 28px;
+      border-radius: 20px;
+      margin-top: 25px;
+    }
+    .about-content,
+    .about-image-section {
+      width: 100%;
+      flex: unset;
+    }
+    .about-img {
+      width: 140px;
+      height: 140px;
+    }
+    .about-content h2 {
+      font-size: 1.4rem;
+    }
+    .about-stats {
+      gap: 24px;
+    }
+  }
+  
+  /* Phones */
+  @media (max-width: 600px) {
+    .about {
+      flex-direction: column;
+      padding: 14px 4vw;
+      border-radius: 11px;
+      gap: 16px;
+      margin-top: 11px;
+    }
+    .about-img {
+      width: 89px;
+      height: 89px;
+    }
+    .about-content h2 {
+      font-size: 1.05rem;
+    }
+    .about-stats {
+      flex-direction: column;
+      gap: 12px;
+      margin: 14px 0;
+    }
+    .about-stat {
+      font-size: 0.92rem;
+    }
+    .about-stat span {
+      font-size: 1.07rem;
+    }
+  }
+  
+
+  

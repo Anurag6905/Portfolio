@@ -1,52 +1,32 @@
-import "../CSS/Skills.css"
+// components/Skills.jsx
+import "../CSS/Skills.css";
 
-const SkillCard = ({ skill }: { skill: string }) => (
-  <div className="Skill-Array">
-    <p className="item">{skill}</p>
-  </div>
-);
+// Demo skills data array
+const skills = [
+  { icon: "../public/React.png", label: "React.js"},
+  { icon: "../public/django-removebg-preview.png", label: "Django"},
+  { icon: "../public/js1.png", label: "JavaScript"},
+  { icon: "../public/Nodejs.png", label: "Node.js"},
+  { icon: "../public/figma.png", label: "Figma"},
+  { icon: "../public/photoshop.jpg", label: "Photoshop"}
+];
 
-const Skills = () => {
+function Skills() {
   return (
-    <div className="Skills-Container">
-
-        <h1 className="Heading">Skills</h1>
-
-      <div className="Skills-section">
-    
-        {/* Frontend Skills */}
-        <section className="Skills-box">
-          <h2 className="Skills-Title">Frontend -</h2>
-          <div className="Skills-List">
-            {["React.js", "TypeScript", "JavaScript", "CSS", "HTML"].map((skill) => (
-              <SkillCard key={skill} skill={skill} />
-            ))}
+    <section className="skills-section">
+      <h3>
+        <span className="skills-highlight">Exploring the Tools</span><br />
+        Behind My Projects
+      </h3>
+      <div className="skills-list">
+        {skills.map((skill, idx) => (
+          <div className="skill-item" key={idx}>
+            <img src={skill.icon} alt={skill.label} className="skill-icon" />
+            <div className="skill-label">{skill.label}</div>
           </div>
-        </section>
-
-        {/* Backend Skills */}
-        <section className="Skills-box">
-          <h2 className="Skills-Title">Backend -</h2>
-          <div className="Skills-List">
-            {["Django", "Python", "Java", "MongoDB", "SQL"].map((skill) => (
-              <SkillCard key={skill} skill={skill} />
-            ))}
-          </div>
-        </section>
-
-        {/* Other Skills */}
-        <section className="Skills-box">
-          <h2 className="Skills-Title">Other Skills -</h2>
-          <div className="Skills-List">
-            {["Marketing", "Management", "Photography", "Videography", "Editing"].map((skill) => (
-              <SkillCard key={skill} skill={skill}/>
-            ))}
-          </div>
-        </section>
+        ))}
       </div>
-    </div>
+    </section>
   );
-};
-
-
+}
 export default Skills;

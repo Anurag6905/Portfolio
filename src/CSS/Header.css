@@ -1,0 +1,132 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: #24411c;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  /* Desktop Nav styles */
+  .header nav ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header nav ul li {
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .header nav ul li:hover {
+    color: #ffbe4e;
+  }
+  
+  .header-contact-btn {
+    background: #ffbe4e;
+    color: #24411c;
+    padding: 9px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .header-contact-btn:hover {
+    background: #e6a900;
+  }
+  
+  /* Hamburger button */
+  .hamburger {
+    display: none; /* hide on desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+  }
+  
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Responsive Breakpoints */
+  
+  /* Tablets */
+  @media (max-width: 900px) {
+    .header {
+      padding: 14px 20px;
+    }
+    .header-contact-btn {
+      display: none; /* hide contact button on tablets and smaller */
+    }
+    /* Keep nav displayed horizontally */
+  }
+  
+  /* Mobile: Show hamburger, hide nav, show mobile menu when open */
+  @media (max-width: 600px) {
+    .header {
+      padding: 10px 20px;
+    }
+    .header nav {
+      position: fixed;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      height: calc(100% - 60px);
+      background: #24411c;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      z-index: 999;
+      padding-top: 36px;
+    }
+    .header nav.open {
+      transform: translateX(0);
+    }
+    .header nav ul {
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 20px;
+    }
+    .header nav ul li {
+      font-size: 1.1rem;
+      cursor: pointer;
+      color: #fff;
+    }
+    .header nav ul li:hover {
+      color: #ffbe4e;
+    }
+    .header-contact-btn {
+      display: none; /* hide on mobile */
+    }
+    .hamburger {
+      display: flex; /* show hamburger */
+    }
+  }
+  

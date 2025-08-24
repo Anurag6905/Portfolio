@@ -1,42 +1,72 @@
-import "../CSS/Experience.css"
+import "../CSS/Experience.css";
 
-interface Positions {
-    id: number;
-    image: string;
-    title: string;
-    Description: string;
-    Timeline: string;
-}
+const experiences = [
+  {
+    company: "The Catalyst Project",
+    role: "Co-Founder & CTO",
+    period: "Jan 2025 - Present",
+    description: [
+      "Drove business growth to ₹3L+ revenue within 5 months by leading logistics, operations, and strategy alongside the co-founder.",
+      "Secured ₹2.5L funding from IIT Bombay’s IDEAS Program, ensuring financial support for product development and scaling",
+      "Built and launched the official website from scratch, managing all technical infrastructure and digital presence of the startup"
+    ],
+  },
+  {
+    company: "Institute Technical Council",
+    role: "Web Convener",
+    period: "Apr 2025 - Present",
+    description: [
+      "Managing and maintaining all official web platforms of ITC, serving a user base of 15,000+ students and faculty ",
+      "Built and launched flagship projects including the Club Royale and Bio-X websites, unveiled in front of a live audience of 1000+ people",
+      "Led digital infrastructure development for clubs & technical events, ensuring smooth operations across the council"
+    ],
+  },
+  {
+    company: "Techfest, IIT Bombay",
+    role: "Web & Tech Co-ordinator",
+    period: "May 2025 - Present",
+    description: [
+      "Managed tech infrastructure for event websites.",
+      "Supported technical teams during live events.",
+      "Ensured smooth deployment and maintenance."
+    ],
+  },
+  {
+    company: "IIT Bombay Racing Team",
+    role: "Assistant Manager",
+    period: "Aug 2025 - Present",
+    description: [
+      "Strengthened the team’s digital presence through online platforms and sponsor outreach",
+      "Worked on pitch decks and competitor analysis, benchmarking global Formula Student teams to refine IIT Bombay Racing’s positioning",
+      "Designed and contributed to the new official website (under development) to showcase technical innovation and attract sponsors"
+    ],
+  },
+];
 
-const Work: Positions[] = [
-    {id:1 , image:"Catalyst Logo.jpg", title:"CTO - The Catalyst Project" , Description:"As the Chief Technology Officer (CTO) of The Catalyst Project, I lead the development and maintenance of our mentorship platform for JEE aspirants, ensuring a seamless user experience. My role involves overseeing all technical aspects, from designing and coding the website to implementing secure, scalable solutions, while collaborating with the team to drive innovation and optimize performance. I focus on leveraging modern web technologies to create an intuitive platform and continuously explore new features to enhance user engagement.", Timeline:"(Jan'25-Present)"},
-    {id:2 , image:"itc.png", title:"Web Convener - ITC" , Description:"The ITC (Institute Technical Council) Web Convener at IIT Bombay is responsible for overseeing the development, maintenance, and management of all official websites under the council. This role involves leading a team of web developers and designers, ensuring that all websites are well-designed, secure, and optimized for performance. The Web Convener coordinates the planning and execution of various web-based projects, implements best practices in web development", Timeline:"(Apr'25-Present)"},
-    {id:3 , image:"logo.png", title:"Web and Tech Coordinator" , Description:"As the Web and Tech Coordinator at Techfest, I am responsible for designing, developing, and maintaining the CA website of Techfest in collaboration with the manager. My role involves creating an intuitive, visually appealing, and user-friendly website that efficiently manages user interactions and delivers a seamless experience for our users. My work combines innovative web design, meticulous coding, and constant optimization, making technology a powerful enabler for a grand celebration of ideas and innovation.", Timeline:"(Apr'25-Present)"},
-    {id:4 , image:"Racing.png", title:"Creatives - IIT B Racing" , Description:"As a Creatives Trainee at IIT Bombay, I worked on developing engaging visual content and strategies for digital platforms. I used tools like Adobe Photoshop and Canva to design graphics, while also exploring creative strategy and storytelling for social media marketing. My work included graphic design, video editing, and helping shape the visual identity of our campaigns. Through this, I gained hands-on experience in combining creativity with design thinking to communicate ideas effectively and support broader marketing goals", Timeline:"(Feb'25-Present)"},
-]
-
-const Experience = () => {
-    return(
-        <div>
-            <div className="Experience">
-                <h1 className="Experience-title">Experience</h1>
-                    {Work.map((item) => (
-                        <div className="Card" key={item.id}>
-                            <img className="Card-photo" src={item.image}></img>
-                            <div className="Card-Brief">
-                                <div className="Card-info">
-                                    <p className="Card-title">{item.title}</p>
-                                    <p className="Card-Timeline">{item.Timeline}</p>
-                                </div> 
-                                <div className="Card-Description">
-                                    <p className="Description">{item.Description}</p>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+function Experience() {
+  return (
+    <section className="experience-section">
+      <h2>
+        My <span className="highlight-experience">Experience</span>
+      </h2>
+      <div className="experience-list">
+        {experiences.map((exp, idx) => (
+          <div className="experience-card" key={idx}>
+            <div className="experience-header">
+              <h3 className="company-name">{exp.company}</h3>
+              <span className="role-period">{exp.role} | {exp.period}</span>
             </div>
-        </div>
-    );
+            <ul className="experience-description">
+              {exp.description.map((point, idx2) => (
+                <li key={idx2}>{point}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Experience;
+

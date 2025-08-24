@@ -1,0 +1,79 @@
+.services {
+    background: #fff;
+    padding: 55px 60px;
+    max-width: 1600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .services-highlight {
+    color: #ffbe4e;
+    font-weight: 700;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 36px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+  }
+  
+  .service-card {
+    background: #f0ffe3;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px #f2f2f2;
+    padding: 30px 24px;
+    font-size: 1.09rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .service-card h3 {
+    font-size: 1.26rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  
+  /* Responsive Adjustments */
+  
+  /* Tablets */
+  @media (max-width: 900px) {
+    .services {
+      padding: 40px 20px;
+    }
+    .services h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 600px) {
+    .services {
+      padding: 28px 12px;
+    }
+    .service-card {
+      font-size: 1rem;
+      padding: 20px 14px;
+    }
+    .services h2 {
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* Small phones */
+  @media (max-width: 400px) {
+    .service-cards {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+  }
+  
