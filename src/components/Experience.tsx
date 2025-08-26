@@ -26,9 +26,9 @@ const experiences = [
     role: "Web & Tech Co-ordinator",
     period: "May 2025 - Present",
     description: [
-      "Managed tech infrastructure for event websites.",
-      "Supported technical teams during live events.",
-      "Ensured smooth deployment and maintenance."
+      "Contributed to the official Techfest website, ensuring seamless experience for 7M+ annual users across 100+ countries",
+      "Collaborated with design and content teams to deliver user-friendly digital experiences for students, corporates, and international partners",
+      "Provided on-ground technical support during live events, resolving issues in real time to ensure flawless execution"
     ],
   },
   {

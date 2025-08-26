@@ -5,7 +5,7 @@ function Services() {
   const services = [
     {
       title: "PW - Collaboration",
-      desc: "Collaborated with a unicorn company to run a campaign for The Catalyst Project, impacting 2000+ students",
+      desc: "Collaborated with a unicorn company to run a campaign, impacting 2000+ students",
     },
     {
       title: "Shark Tank India",
@@ -13,7 +13,7 @@ function Services() {
     },
     {
       title: "IDEAS Program",
-      desc: "Secured ₹2.5L funding from IIT Bombay’s IDEAS program to scale The Catalyst Project",
+      desc: "Secured ₹2.5L funding from IIT Bombay’s IDEAS program to scale our bussiness model",
     },
     {
       title: "IDEAS Program",
