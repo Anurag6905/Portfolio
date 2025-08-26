@@ -4,23 +4,27 @@ import "../CSS/Services.css";
 function Services() {
   const services = [
     {
-      title: "UI/UX Design",
-      desc: "Intuitive and modern user interface and experience design.",
+      title: "PW - Collaboration",
+      desc: "Collaborated with a unicorn company to run a campaign for The Catalyst Project, impacting 2000+ students",
     },
     {
-      title: "Application Design",
-      desc: "Designing apps with a focus on user needs and modern trends.",
+      title: "Shark Tank India",
+      desc: "Selected for Shark Tank India – Phase 2 (2025) - in person audition, recognized for innovation and business potential.",
     },
     {
-      title: "Website Design",
-      desc: "Responsive and engaging website design for your brand.",
+      title: "IDEAS Program",
+      desc: "Secured ₹2.5L funding from IIT Bombay’s IDEAS program to scale The Catalyst Project",
+    },
+    {
+      title: "IDEAS Program",
+      desc: "Secured ₹2.5L funding from IIT Bombay’s IDEAS program to scale The Catalyst Project",
     },
   ];
 
   return (
     <section className="services">
       <h2>
-        <span className="services-highlight">Services</span> I Provide
+        <span className="services-highlight">Achievements</span> till now
       </h2>
       <div className="service-cards">
         {services.map((service, idx) => (

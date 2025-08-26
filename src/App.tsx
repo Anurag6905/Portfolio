@@ -10,6 +10,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Gallery from "./components/Gallery";
 import Blog from "./components/Blog";
+import SocialLinks from "./components/SocialLinks";
 
 function App() {
   return (
@@ -22,9 +23,10 @@ function App() {
       <Skills />
       <Projects />
       <Services />
-      <About />
+      {/* <About />
       <Gallery />
-      <Blog />
+      <Blog /> */}
+      <SocialLinks />
     </div>
   );
 }
