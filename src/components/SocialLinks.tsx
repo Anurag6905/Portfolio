@@ -48,10 +48,10 @@ function SocialLinks() {
 
       {/* Contact Info Section */}
       <div className="contact-info">
-        <a href="tel:+919876543210" className="contact-link" aria-label="Phone Number">
+        <a href="tel:+917499972586" className="contact-link" aria-label="Phone Number">
           📞 +91 7499972586
         </a>
-        <a href="mailto:your.email@example.com" className="contact-link" aria-label="Email Address">
+        <a href="anuragdesai2019@gmail.com" className="contact-link" aria-label="Email Address">
           ✉️ anuragdesai2019@gmail.com
         </a>
       </div>
