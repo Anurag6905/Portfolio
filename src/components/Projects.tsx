@@ -4,22 +4,22 @@ import "../CSS/Projects.css";
 // Dummy data for projects grid
 const projects = [
   {
-    image: "../public/Glitter.png",
+    image: "/Glitter.png",
     title: "Glitter - Social Media App",
     tags: ["Django", "Figma", "Web-Application", "Social Media"]
   },
   {
-    image: "/public/Expense.png",
+    image: "/Expense.png",
     title: "Expense Tracker – Personal Finance Management App",
     tags: ["React.js", "Javascript", "UI/UX", "Web Application"]
   },
   {
-    image: "/public/Adlink.png",
+    image: "/Adlink.png",
     title: "Adlink - Marketing Agency",
     tags: ["React.js", "Javascript", "UI/UX", "Web Application"]
   },
   {
-    image: "/public/CATALYST.png",
+    image: "/CATALYST.png",
     title: "Catalyst - Online Learning Platform",
     tags: ["Javascript", "Online-Platform", "UI/UX", "Web Application"]
   }

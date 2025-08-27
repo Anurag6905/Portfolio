@@ -3,12 +3,12 @@ import "../CSS/Skills.css";
 
 // Demo skills data array
 const skills = [
-  { icon: "../public/React.png", label: "React.js"},
-  { icon: "../public/django-removebg-preview.png", label: "Django"},
-  { icon: "../public/js1.png", label: "JavaScript"},
-  { icon: "../public/Nodejs.png", label: "Node.js"},
-  { icon: "../public/figma.png", label: "Figma"},
-  { icon: "../public/photoshop.jpg", label: "Photoshop"}
+  { icon: "/React.png", label: "React.js"},
+  { icon: "/django-removebg-preview.png", label: "Django"},
+  { icon: "/js1.png", label: "JavaScript"},
+  { icon: "/Nodejs.png", label: "Node.js"},
+  { icon: "/figma.png", label: "Figma"},
+  { icon: "/photoshop.jpg", label: "Photoshop"}
 ];
 
 function Skills() {

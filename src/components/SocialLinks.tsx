@@ -15,7 +15,7 @@ function SocialLinks() {
           rel="noopener noreferrer"
           aria-label="Instagram"
         >
-          <img src="/public/insta.jpg" alt="Instagram" />
+          <img src="/insta.jpg" alt="Instagram" />
         </a>
         <a
           href="https://github.com/Anurag6905"
@@ -24,7 +24,7 @@ function SocialLinks() {
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
-          <img src="/public/github-removebg-preview.png" alt="GitHub" />
+          <img src="/github-removebg-preview.png" alt="GitHub" />
         </a>
         <a
           href="https://www.linkedin.com/in/anurag-desai-a37a35333/?trk=PROFILE_DROP_DOWN"
@@ -33,7 +33,7 @@ function SocialLinks() {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <img src="/public/linkedin.png" alt="LinkedIn" />
+          <img src="/linkedin.png" alt="LinkedIn" />
         </a>
         <a
           href="https://in.pinterest.com/anuragdesai2019"
@@ -42,7 +42,7 @@ function SocialLinks() {
           rel="noopener noreferrer"
           aria-label="Pinterest"
         >
-          <img src="/public/pinterest-removebg-preview.png" alt="Pinterest" />
+          <img src="/pinterest-removebg-preview.png" alt="Pinterest" />
         </a>
       </div>
 
