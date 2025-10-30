@@ -2,10 +2,16 @@
 .skills-section {
     text-align: center;
     padding: 42px 20px 28px 20px;
-    background: #fff;
+    background: url("/public/bag8.jpg");
+    background-size: cover;
+    background-attachment: fixed;
   }
   .skills-highlight {
-    color: #27871b;
+    color: #e2e7e1;
+  }
+
+  .skills-section h3 {
+    color: #ffbe4e;
   }
   .skills-list {
     display: flex;
@@ -22,7 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 8px #eef7ed;
+    box-shadow: 0 4px 8px #282c27;
     margin-bottom: 15px;
   }
   .skill-icon {

@@ -1,6 +1,8 @@
 /* components/Projects.css */
 .projects-section {
-    background: #fff;
+    background: url("/public/bag8.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     padding: 40px 20px;
     max-width: 1300px;
     margin: 0 auto;
@@ -11,6 +13,7 @@
     align-items: flex-end;
     margin-bottom: 24px;
     flex-wrap: wrap;
+    color: #f0ffe3;
   }
   .projects-highlight {
     color: #ffbe4e;
@@ -40,7 +43,7 @@
     background: #f0ffe3;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 3px 18px #e3edeb;
+    box-shadow: 0 3px 18px #2b2e2c;
     display: flex;
     flex-direction: column;
     transition: transform 0.2s;

@@ -19,7 +19,7 @@ function Hero() {
       <div className="hero-image-container">
         <img
           className="hero-image"
-          src="/me3.jpg"
+          src="/my-img.png"
           alt="Olivia Smith"
         />
         <button className="cv-btn">Resume</button>

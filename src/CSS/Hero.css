@@ -3,11 +3,17 @@
     align-items: center;
     justify-content: space-between;
     padding: 64px 60px;
-    background: #fff;
+    background: url("/public/bag8.jpg");
+    background-size: cover;
+    background-attachment: fixed;
   }
   
   .hero-content {
     max-width: 50%;
+  }
+
+  .hero-content h1 {
+    color: #f0ffe3;
   }
   
   .badge {
@@ -68,7 +74,7 @@
     object-fit: cover;
     margin-bottom: 12px;
     background: #fffbe9;
-    box-shadow: 0 8px 32px #eee;
+    box-shadow: 0 8px 32px #382705;
   }
   
   .cv-btn {

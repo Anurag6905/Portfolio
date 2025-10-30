@@ -1,11 +1,13 @@
 .social-section {
     text-align: center;
     padding: 48px 0 38px 0;
-    background: #fff;
+    background: url("/public/bag8.jpg");
+    background-size: cover;
+    background-attachment: fixed;
   }
   
   .social-section h2 {
-    color: #24411c;
+    color: #dae1d8;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 25px;
@@ -30,7 +32,7 @@
     justify-content: center;
     border-radius: 14px;
     background: #f0ffe3;
-    box-shadow: 0 4px 12px #f2f2f2;
+    box-shadow: 0 4px 12px #453d3d;
     transition: transform 0.18s, box-shadow 0.18s, border-radius 0.26s;
     overflow: hidden;
   }
@@ -76,13 +78,13 @@
     gap: 36px;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #24411c;
+    color: #dae1d8;
     flex-wrap: wrap;
   }
   
   .contact-link {
     text-decoration: none;
-    color: #24411c;
+    color: #dae1d8;
     transition: color 0.2s;
     white-space: nowrap;
   }

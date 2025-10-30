@@ -17,7 +17,7 @@ function App() {
     <div className="portfolio">
       <Header />
       <Hero />
-      <NavTabs />
+      {/* <NavTabs /> */}
       <Experience />
       <NavTabs />
       <Skills />
