@@ -8,7 +8,8 @@ const skills = [
   { icon: "/js1.png", label: "JavaScript"},
   { icon: "/Nodejs.png", label: "Node.js"},
   { icon: "/figma.png", label: "Figma"},
-  { icon: "/photoshop.jpg", label: "Photoshop"}
+  { icon: "/photoshop.jpg", label: "Photoshop"},
+  { icon: "/canva.png", label: "Canva"}
 ];
 
 function Skills() {
