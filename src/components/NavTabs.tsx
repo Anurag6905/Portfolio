@@ -5,10 +5,10 @@ function Tabs() {
   return (
     <nav className="tabs">
       <ul>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>Django</li>
-        <li>Javascript</li>
+        <li>Entrepreneurship</li>
+        <li>Strategy</li>
+        <li>Marketing</li>
+        <li>Development</li>
       </ul>
     </nav>
   );

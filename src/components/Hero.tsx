@@ -5,10 +5,10 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <span className="badge">Web Developer</span>
+        <span className="badge">Entrepreneur</span>
         <h1>
           I’m <span className="highlight">Anurag Desai</span><br />
-          Web Developer<br />
+          Student Founder<br />
           Based in India
         </h1>
         <div className="hero-actions">

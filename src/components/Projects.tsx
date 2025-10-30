@@ -4,6 +4,16 @@ import "../CSS/Projects.css";
 // Dummy data for projects grid
 const projects = [
   {
+    image: "/BCC.png",
+    title: "BCC - Strategy Case Competition",
+    tags: ["Strategy", "Business Analysis", "Market Analysis", "Case Study"]
+  },
+  {
+    image: "/ConsultX.png",
+    title: "Consult X - Case Study",
+    tags: ["Case Study", "Strategy"]
+  },
+  {
     image: "/Glitter.png",
     title: "Glitter - Social Media App",
     tags: ["Django", "Figma", "Web-Application", "Social Media"]

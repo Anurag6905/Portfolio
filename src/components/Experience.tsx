@@ -6,9 +6,20 @@ const experiences = [
     role: "Co-Founder & CTO",
     period: "Jan 2025 - Present",
     description: [
-      "Drove business growth to ₹3L+ revenue within 5 months by leading logistics, operations, and strategy alongside the co-founder.",
-      "Secured ₹2.5L funding from IIT Bombay’s IDEAS Program, ensuring financial support for product development and scaling",
-      "Built and launched the official website from scratch, managing all technical infrastructure and digital presence of the startup"
+      "Generated (INR) 3 Lakhs+ revenue in the first year, building a sustainable student-first mentorship model",
+      "Recruited and managed 100+ mentors while leading a 15+ intern core team across strategy, product, ops",
+      "Successfully negotiated and secured a strategic partnership with EdTech giant Physics Wallah for Catalyst",
+      "Expanded to a pan-India presence, reaching 5k+ aspirants and onboarding students from 20+ states"
+    ],
+  },
+  {
+    company: "IIT Bombay Racing Team",
+    role: "Assistant Manager",
+    period: "Aug 2025 - Present",
+    description: [
+      "Curated social media content that got over 10,000+ likes and 1,00,000+ views across social media platform",
+      "Designed a strategic BPP pitch deck for the Formula Bharat, clearly highlighting business strategy and planning",
+      "Contributed to the New official website of the team to showcase, technical innovation and attract sponsors"
     ],
   },
   {
@@ -17,8 +28,8 @@ const experiences = [
     period: "Apr 2025 - Present",
     description: [
       "Managing and maintaining all official web platforms of ITC, serving a user base of 15,000+ students and faculty ",
-      "Built and launched flagship projects including the Club Royale and Bio-X websites, unveiled in front of a live audience of 1000+ people",
-      "Led digital infrastructure development for clubs & technical events, ensuring smooth operations across the council"
+      "Represented the Web Team at the ITC Orientation, engaging 1,000+ incoming students about its initiatives",
+      "Designed and delivered the WebCraft course, successfully enrolling and mentoring 60+ students in web development"
     ],
   },
   {
@@ -29,16 +40,6 @@ const experiences = [
       "Contributed to the official Techfest website, ensuring seamless experience for 7M+ annual users across 100+ countries",
       "Collaborated with design and content teams to deliver user-friendly digital experiences for students, corporates, and international partners",
       "Provided on-ground technical support during live events, resolving issues in real time to ensure flawless execution"
-    ],
-  },
-  {
-    company: "IIT Bombay Racing Team",
-    role: "Assistant Manager",
-    period: "Aug 2025 - Present",
-    description: [
-      "Strengthened the team’s digital presence through online platforms and sponsor outreach",
-      "Worked on pitch decks and competitor analysis, benchmarking global Formula Student teams to refine IIT Bombay Racing’s positioning",
-      "Designed and contributed to the new official website (under development) to showcase technical innovation and attract sponsors"
     ],
   },
 ];
