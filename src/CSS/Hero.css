@@ -89,6 +89,10 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .cv-btn:hover {
+    cursor: pointer;
+  }
   
   /* ===== Responsive Styles ===== */
   

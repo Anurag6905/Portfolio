@@ -22,7 +22,17 @@ function Hero() {
           src="/my-img.png"
           alt="Olivia Smith"
         />
-        <button className="cv-btn">Resume</button>
+        <button
+  className="cv-btn"
+  onClick={() => {
+    const link = document.createElement("a");
+    link.href = "/Anurag_Resume.pdf"; 
+    link.download = "Anurag_Resume.pdf"; 
+    link.click();
+  }}
+>
+  Resume
+</button>
       </div>
     </section>
   );

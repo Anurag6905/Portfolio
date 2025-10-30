@@ -18,7 +18,7 @@ function Header() {
           <li onClick={closeMenu}>Home</li>
           <li onClick={closeMenu}>Projects</li>
           <li onClick={closeMenu}>About</li>
-          <li onClick={closeMenu}>Serivces</li>
+          <li onClick={closeMenu}>Achievements</li>
           <li onClick={closeMenu}>Skills</li>
         </ul>
       </nav>
