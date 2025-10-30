@@ -9,15 +9,15 @@ function Services() {
     },
     {
       title: "Shark Tank India",
-      desc: "Selected for Shark Tank India – Phase 2 (2025) - in person audition, recognized for innovation and business potential.",
+      desc: "Selected for Shark Tank India – Phase 3 (2025) - in person audition, recognized for innovation and business potential.",
     },
     {
       title: "IDEAS Program",
       desc: "Secured ₹2.5L funding from IIT Bombay’s IDEAS program to scale our bussiness model",
     },
     {
-      title: "IDEAS Program",
-      desc: "Secured ₹2.5L funding from IIT Bombay’s IDEAS program to scale The Catalyst Project",
+      title: "Catalyst",
+      desc: "Generated (INR) 3 Lakhs+ revenue in the first year, building a sustainable student-first mentorship model",
     },
   ];
 
