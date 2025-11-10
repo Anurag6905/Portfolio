@@ -14,6 +14,16 @@ const projects = [
     tags: ["Case Study", "Strategy"]
   },
   {
+    image: "/Equity.png",
+    title: "Equity Research Competition",
+    tags: ["Research Analysis", "Finance", "Market Analysis", "Investment"]
+  },
+  {
+    image: "/Fintech.png",
+    title: "Fintech Innovation Challenge",
+    tags: ["Problem Solving", "Entrepreneurship", "Product Development"]
+  },
+  {
     image: "/Glitter.png",
     title: "Glitter - Social Media App",
     tags: ["Django", "Figma", "Web-Application", "Social Media"]
