@@ -92,6 +92,15 @@
   .contact-link:hover {
     color: #ffbe4e;
   }
+
+  .Linkedin {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   /* Mobile adjustment */
   @media (max-width: 600px) {

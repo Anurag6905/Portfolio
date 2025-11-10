@@ -55,6 +55,11 @@ function SocialLinks() {
           ✉️ anuragdesai2019@gmail.com
         </a>
       </div>
+
+      <div className="Linkedin">
+        <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="anurag-desai-a37a35333" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/anurag-desai-a37a35333?trk=profile-badge"></a></div>
+      </div>
+
     </section>
   );
 }
