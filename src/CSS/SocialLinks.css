@@ -95,11 +95,29 @@
 
   .Linkedin {
     margin-top: 1rem;
+    gap: 16px;
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .libutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7px;
+    text-align: center;
+    outline: none;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    width: 200px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #0A66C2;
+    font-weight: 600;
   }
   
   /* Mobile adjustment */
