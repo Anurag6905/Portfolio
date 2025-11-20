@@ -3,7 +3,7 @@ import "../CSS/Experience.css";
 const experiences = [
   {
     company: "The Catalyst Project",
-    role: "Co-Founder & CTO",
+    role: "Co-Founder & CMO",
     period: "Jan 2025 - Present",
     description: [
       "Generated (INR) 3 Lakhs+ revenue in the first year, building a sustainable student-first mentorship model",
