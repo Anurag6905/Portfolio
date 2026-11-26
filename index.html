@@ -396,7 +396,7 @@ const stats = [
   [3, "", "", 0, "Podium finishes in case competitions and hackathons"],
   [5, "", "M+", 0, "LinkedIn reach from 2 years of content creation"],
   [5, "", "K+", 0, "Students helped through The Catalyst Project"],
-  [3.5, "₹", "L+", 1, "Revenue in year one of The Catalyst Project"]
+  [3.5, "₹", "L+", 1, "Revenue in year one of my first startup"]
 ];
 const fmt = (v, d) => d ? v.toFixed(d) : Math.round(v).toLocaleString('en-IN');
 $('#stats').innerHTML = stats.map(([n, p, s, d, l]) => `<div class="stat rv"><div class="num" data-to="${n}" data-p="${p}" data-s="${s}" data-d="${d}">${p}${fmt(n, d)}${s}</div><p>${l}</p></div>`).join('');
