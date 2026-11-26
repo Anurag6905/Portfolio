@@ -226,25 +226,20 @@ em{font-style:italic}
 /* life */
 .sec-h{margin:0 0 14px;font:400 clamp(44px,6vw,88px)/1 var(--serif);letter-spacing:-.02em}
 .sec-h em{color:#7b8d80}
-.life{padding:clamp(80px,10vw,140px) 0 clamp(80px,10vw,140px)}
-.life-sub{margin:0 0 clamp(28px,4vw,44px);max-width:520px;color:var(--muted);font-size:17px}
-.gal{columns:3 280px;column-gap:18px}
-.ph{position:relative;break-inside:avoid;margin:0 0 18px;border-radius:16px;overflow:hidden;background:var(--soft);cursor:zoom-in;outline:none}
-.ph img{display:block;width:100%;height:auto;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
-.ph:hover img,.ph:focus-visible img{transform:scale(1.04)}
-.ph figcaption{position:absolute;inset:auto 0 0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.55));color:#fff;font-size:15px;font-weight:500;opacity:0;transform:translateY(6px);transition:opacity .35s,transform .35s}
-.ph:hover figcaption,.ph:focus-visible figcaption{opacity:1;transform:none}
-.ph:focus-visible{box-shadow:0 0 0 3px var(--accent)}
-@media (max-width:760px){.gal{columns:2;column-gap:10px}.ph{margin-bottom:10px;border-radius:12px}.ph figcaption{display:none}}
-.lb{position:fixed;inset:0;z-index:200;display:none;place-items:center;background:rgba(12,14,13,.9);padding:60px 70px}
-.lb.on{display:grid}
-.lb figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:12px;max-width:100%;max-height:100%}
-.lb img{max-width:min(92vw,1100px);max-height:calc(100vh - 160px);border-radius:8px;object-fit:contain}
-.lb figcaption{color:#fff;font-size:16px;font-weight:500}
-.lb button{position:absolute;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#fff;cursor:pointer;display:grid;place-items:center}
-.lb button svg{width:20px;height:20px}
-.lb .x{top:18px;right:18px}.lb .pv{left:18px;top:50%;margin-top:-24px}.lb .nx{right:18px;top:50%;margin-top:-24px}
-@media (max-width:760px){.lb{padding:60px 12px}.lb .pv{left:8px}.lb .nx{right:8px}}
+.life{padding:clamp(80px,10vw,140px) 0;overflow:hidden}
+.life-top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.life-sub{margin:0;max-width:460px;color:var(--muted);font-size:17px}
+.fan{display:flex;justify-content:center;align-items:center;padding:clamp(40px,6vw,70px) 0 10px;text-decoration:none;color:inherit}
+.fcard{position:relative;flex:0 0 auto;width:clamp(150px,17vw,230px);margin:0 -28px;padding:9px 9px 0;background:#fff;border-radius:4px;box-shadow:0 18px 36px -16px rgba(15,17,16,.45),0 2px 4px rgba(15,17,16,.06);transform:rotate(var(--r)) translateY(var(--y,0));transition:transform .6s cubic-bezier(.2,.75,.2,1),margin .6s cubic-bezier(.2,.75,.2,1)}
+.fcard img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:2px}
+.fcard span{display:block;padding:8px 2px 10px;font-size:13px;color:var(--muted);text-align:center}
+.fcard .pin{position:absolute;left:50%;top:-7px;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f07a64,#c2492e 60%,#8f2f1c);box-shadow:0 3px 4px rgba(0,0,0,.3)}
+.fcard:nth-child(2) .pin,.fcard:nth-child(5) .pin{background:radial-gradient(circle at 35% 35%,#7fb08c,#2f6b3f 60%,#1d4527)}
+.fcard:nth-child(3) .pin{background:radial-gradient(circle at 35% 35%,#f3d27a,#d39a2c 60%,#9a6b14)}
+.fan:hover .fcard{margin:0 10px;transform:rotate(calc(var(--r) * .3)) translateY(-6px)}
+.fcard:nth-child(1){--r:-9deg;--y:18px;z-index:1}.fcard:nth-child(2){--r:-4deg;--y:4px;z-index:2}.fcard:nth-child(3){--r:1deg;z-index:3}.fcard:nth-child(4){--r:5deg;--y:6px;z-index:2}.fcard:nth-child(5){--r:10deg;--y:20px;z-index:1}
+.life-cta{display:flex;justify-content:center;margin-top:30px}
+@media (max-width:760px){.fcard{width:44vw;margin:0 -44px}.fcard:nth-child(1),.fcard:nth-child(5){display:none}.fan:hover .fcard{margin:0 -44px;transform:rotate(var(--r)) translateY(var(--y,0))}}
 /* end */
 .end{position:relative;min-height:92vh;min-height:92svh;display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden}
 .end .bgi{position:absolute;inset:-10% 0;background:#1a1208}
@@ -297,7 +292,7 @@ footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;paddin
 <header class="nav" id="nav">
   <a class="brand" href="#top">Anurag Desai</a>
   <nav class="links" aria-label="Sections">
-    <a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#life">Life</a>
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a>
   </nav>
   <a class="btn" href="#contact">Let's talk
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
@@ -359,17 +354,15 @@ footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;paddin
 
 <section class="life" id="life">
   <div class="wrap">
-    <h2 class="sec-h rv">From my <em>camera roll.</em></h2>
-    <p class="life-sub rv">What I notice when I'm not building. Mostly skies, roads after rain, and old buildings.</p>
-    <div class="gal" id="gal"></div>
+    <div class="life-top">
+      <h2 class="sec-h rv">From my <em>camera roll.</em></h2>
+      <p class="life-sub rv">What I notice when I'm not building. Mostly skies, roads after rain, and old buildings.</p>
+    </div>
+    <a class="fan rv" href="gallery.html" aria-label="View all photos"><figure class="fcard"><i class="pin"></i><img src="img/pins/p13.webp" alt="looking up" loading="lazy"><span>looking up</span></figure><figure class="fcard"><i class="pin"></i><img src="img/pins/p15.webp" alt="sunset through shades" loading="lazy"><span>sunset through shades</span></figure><figure class="fcard"><i class="pin"></i><img src="img/pins/p18.webp" alt="white marble, grey sky" loading="lazy"><span>white marble, grey sky</span></figure><figure class="fcard"><i class="pin"></i><img src="img/pins/p08.webp" alt="coconut break" loading="lazy"><span>coconut break</span></figure><figure class="fcard"><i class="pin"></i><img src="img/pins/p10.webp" alt="city at sunset" loading="lazy"><span>city at sunset</span></figure></a>
+    <div class="life-cta rv"><a class="btn dark" href="gallery.html">View all 36 photos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
-  <button class="x" id="lbX" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
-  <button class="pv" id="lbP" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
-  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
-  <button class="nx" id="lbN" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
-</div>
+
 
 <section class="end" id="contact">
   <div class="bgi" id="endBg"><img src="img/sunset.webp" alt="Anurag silhouetted against a sunset at the sea, arms open" loading="lazy"></div>
@@ -601,27 +594,7 @@ $('#work').addEventListener('pointermove', e => {
 $('#work').addEventListener('pointerleave', () => lastX = null);
 
 const hasG = !!window.gsap;
-/* life: photos */
-const caps = {1:"golden hour",2:"sunset over the city",3:"a plant and a window",4:"after the rain",5:"bar lights",6:"a ceiling full of stars",7:"low tide",8:"coconut break",9:"palm canopy",10:"city at sunset",11:"a cafe I liked",12:"arches",13:"looking up",14:"pink skies",15:"sunset through shades",16:"storm coming",17:"marble and clouds",18:"white marble, grey sky",19:"long walkway",20:"a tree and its twin",21:"grey afternoon",22:"old stone",23:"wet roads",24:"late-night desk",25:"misty morning",26:"sparks",27:"lights on the lawn",28:"concert night",29:"moon through clouds",30:"so green",31:"forest path",32:"where the sea curves",33:"road through the trees",34:"campus after rain",35:"a garden in bloom",36:"rain over the lawn"};
-const dims = {1: [675, 900], 2: [900, 506], 3: [675, 900], 4: [675, 900], 5: [675, 900], 6: [675, 900], 7: [900, 675], 8: [675, 900], 9: [900, 675], 10: [900, 675], 11: [675, 900], 12: [675, 900], 13: [675, 900], 14: [675, 900], 15: [675, 900], 16: [701, 900], 17: [675, 900], 18: [675, 900], 19: [703, 900], 20: [736, 810], 21: [675, 900], 22: [675, 900], 23: [675, 900], 24: [736, 552], 25: [675, 900], 26: [735, 547], 27: [675, 900], 28: [506, 900], 29: [675, 900], 30: [703, 900], 31: [675, 900], 32: [668, 900], 33: [675, 900], 34: [675, 900], 35: [735, 699], 36: [675, 900]};
-const order = [13, 15, 8, 18, 16, 4, 6, 10, 20, 26, 12, 24, 32, 9, 28, 35];
-for (let n = 1; n <= 36; n++) if (!order.includes(n)) order.push(n);
-const photos = order.map(n => ({ src: `img/pins/p${String(n).padStart(2, '0')}.webp`, cap: caps[n] || '', w: dims[n][0], h: dims[n][1] }));
-const shown = photos.map((_, i) => i);
-$('#gal').innerHTML = photos.map((p, i) => `<figure class="ph rv" data-k="${i}" tabindex="0" role="button" aria-label="Open photo: ${p.cap}"><img src="${p.src}" alt="${p.cap}" width="${p.w}" height="${p.h}" loading="lazy" decoding="async"><figcaption>${p.cap}</figcaption></figure>`).join('');
-$('#gal').addEventListener('click', e => { const f = e.target.closest('.ph'); if (f) openLb(+f.dataset.k); });
-$('#gal').addEventListener('keydown', e => { const f = e.target.closest('.ph'); if (f && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); openLb(+f.dataset.k); } });
 
-/* lightbox */
-const lb = $('#lb'); let lbi = 0;
-function showLb() { const p = photos[shown[lbi]]; $('#lbImg').src = p.src; $('#lbImg').alt = p.cap; $('#lbCap').textContent = p.cap; }
-function openLb(k) { lbi = k; showLb(); lb.classList.add('on'); $('#lbX').focus(); }
-const closeLb = () => lb.classList.remove('on');
-$('#lbX').addEventListener('click', closeLb);
-$('#lbP').addEventListener('click', () => { lbi = (lbi + shown.length - 1) % shown.length; showLb(); });
-$('#lbN').addEventListener('click', () => { lbi = (lbi + 1) % shown.length; showLb(); });
-lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
-addEventListener('keydown', e => { if (!lb.classList.contains('on')) return; if (e.key === 'Escape') closeLb(); if (e.key === 'ArrowLeft') $('#lbP').click(); if (e.key === 'ArrowRight') $('#lbN').click(); });
 
 let workOn = true, stageOn = true;
 new IntersectionObserver(es => es.forEach(e => { if (e.target.id === 'work') workOn = e.isIntersecting; else stageOn = e.isIntersecting; })).observe($('#work'));

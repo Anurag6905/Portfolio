@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Camera roll · Anurag Desai</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1110'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23fff'%3Ead%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#fff;--soft:#f5f5f2;--ink:#0f1110;--muted:#666b67;--line:#e6e6e1;--accent:#2f6b3f;--serif:"Instrument Serif",Georgia,serif;--sans:"Inter Tight",system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1320px;margin:0 auto;padding:0 max(4vw,16px)}
+.nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px max(4vw,16px);background:rgba(255,255,255,.8);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.brand{font:400 24px/1 var(--serif);text-decoration:none;color:inherit}
+.back{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:99px;border:1px solid var(--line);text-decoration:none;color:inherit;font-weight:500;font-size:15px;transition:background .25s}
+.back:hover{background:var(--soft)}
+.back svg{width:16px;height:16px}
+header{padding:clamp(40px,7vw,90px) 0 clamp(26px,4vw,44px)}
+h1{margin:0;font:400 clamp(48px,7vw,104px)/1 var(--serif);letter-spacing:-.02em}
+h1 em{color:#7b8d80}
+header p{margin:14px 0 0;max-width:520px;color:var(--muted);font-size:17px}
+.gal{columns:3 300px;column-gap:18px;padding-bottom:90px}
+.ph{position:relative;break-inside:avoid;margin:0 0 18px;border-radius:16px;overflow:hidden;background:var(--soft);cursor:zoom-in;outline:none;opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.ph.in{opacity:1;transform:none}
+.ph img{display:block;width:100%;height:auto;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.ph:hover img,.ph:focus-visible img{transform:scale(1.04)}
+.ph figcaption{position:absolute;inset:auto 0 0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.55));color:#fff;font-size:15px;font-weight:500;opacity:0;transform:translateY(6px);transition:opacity .35s,transform .35s}
+.ph:hover figcaption,.ph:focus-visible figcaption{opacity:1;transform:none}
+.ph:focus-visible{box-shadow:0 0 0 3px var(--accent)}
+.lb{position:fixed;inset:0;z-index:200;display:none;place-items:center;background:rgba(12,14,13,.92);padding:60px 70px}
+.lb.on{display:grid}
+.lb figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:12px}
+.lb img{max-width:min(92vw,1100px);max-height:calc(100vh - 160px);border-radius:8px;object-fit:contain}
+.lb figcaption{color:#fff;font-size:16px;font-weight:500}
+.lb .count{color:rgba(255,255,255,.6);font-size:14px}
+.lb button{position:absolute;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#fff;cursor:pointer;display:grid;place-items:center}
+.lb button svg{width:20px;height:20px}
+.lb .x{top:18px;right:18px}.lb .pv{left:18px;top:50%;margin-top:-24px}.lb .nx{right:18px;top:50%;margin-top:-24px}
+footer{padding:24px max(4vw,16px);font-size:14px;color:var(--muted);border-top:1px solid var(--line)}
+@media (max-width:760px){.gal{columns:2;column-gap:10px}.ph{margin-bottom:10px;border-radius:12px}.ph figcaption{display:none}.lb{padding:60px 12px}.lb .pv{left:8px}.lb .nx{right:8px}}
+@media (prefers-reduced-motion:reduce){.ph{opacity:1;transform:none;transition:none}.ph img{transition:none}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="brand" href="index.html">Anurag Desai</a>
+  <a class="back" href="index.html#life"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back to portfolio</a>
+</nav>
+<main class="wrap">
+  <header>
+    <h1>From my <em>camera roll.</em></h1>
+    <p>What I notice when I'm not building. Mostly skies, roads after rain, and old buildings. Tap any photo to see it big.</p>
+  </header>
+  <div class="gal" id="gal"></div>
+</main>
+<footer>© 2026 Anurag Desai · Mumbai</footer>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="x" id="lbX" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="pv" id="lbP" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption><span class="count" id="lbN2"></span></figure>
+  <button class="nx" id="lbN" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<script>
+{
+const $ = s => document.querySelector(s);
+const caps = {1:"golden hour",2:"sunset over the city",3:"a plant and a window",4:"after the rain",5:"bar lights",6:"a ceiling full of stars",7:"low tide",8:"coconut break",9:"palm canopy",10:"city at sunset",11:"a cafe I liked",12:"arches",13:"looking up",14:"pink skies",15:"sunset through shades",16:"storm coming",17:"marble and clouds",18:"white marble, grey sky",19:"long walkway",20:"a tree and its twin",21:"grey afternoon",22:"old stone",23:"wet roads",24:"late-night desk",25:"misty morning",26:"sparks",27:"lights on the lawn",28:"concert night",29:"moon through clouds",30:"so green",31:"forest path",32:"where the sea curves",33:"road through the trees",34:"campus after rain",35:"a garden in bloom",36:"rain over the lawn"};
+const dims = {1: [675, 900], 2: [900, 506], 3: [675, 900], 4: [675, 900], 5: [675, 900], 6: [675, 900], 7: [900, 675], 8: [675, 900], 9: [900, 675], 10: [900, 675], 11: [675, 900], 12: [675, 900], 13: [675, 900], 14: [675, 900], 15: [675, 900], 16: [701, 900], 17: [675, 900], 18: [675, 900], 19: [703, 900], 20: [736, 810], 21: [675, 900], 22: [675, 900], 23: [675, 900], 24: [736, 552], 25: [675, 900], 26: [735, 547], 27: [675, 900], 28: [506, 900], 29: [675, 900], 30: [703, 900], 31: [675, 900], 32: [668, 900], 33: [675, 900], 34: [675, 900], 35: [735, 699], 36: [675, 900]};
+const order = [13, 15, 8, 18, 16, 4, 6, 10, 20, 26, 12, 24, 32, 9, 28, 35];
+for (let n = 1; n <= 36; n++) if (!order.includes(n)) order.push(n);
+const photos = order.map(n => ({ src: `img/pins/p${String(n).padStart(2, '0')}.webp`, cap: caps[n] || '', w: dims[n][0], h: dims[n][1] }));
+$('#gal').innerHTML = photos.map((p, i) => `<figure class="ph" data-k="${i}" tabindex="0" role="button" aria-label="Open photo: ${p.cap}"><img src="${p.src}" alt="${p.cap}" width="${p.w}" height="${p.h}" loading="lazy" decoding="async"><figcaption>${p.cap}</figcaption></figure>`).join('');
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.ph').forEach(f => io.observe(f));
+const lb = $('#lb'); let k = 0;
+const show = () => { const p = photos[k]; $('#lbImg').src = p.src; $('#lbImg').alt = p.cap; $('#lbCap').textContent = p.cap; $('#lbN2').textContent = (k + 1) + ' / ' + photos.length; };
+const open = i => { k = i; show(); lb.classList.add('on'); document.body.style.overflow = 'hidden'; $('#lbX').focus(); };
+const close = () => { lb.classList.remove('on'); document.body.style.overflow = ''; };
+const step = d => { k = (k + d + photos.length) % photos.length; show(); };
+$('#gal').addEventListener('click', e => { const f = e.target.closest('.ph'); if (f) open(+f.dataset.k); });
+$('#gal').addEventListener('keydown', e => { const f = e.target.closest('.ph'); if (f && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); open(+f.dataset.k); } });
+$('#lbX').addEventListener('click', close);
+$('#lbP').addEventListener('click', () => step(-1));
+$('#lbN').addEventListener('click', () => step(1));
+lb.addEventListener('click', e => { if (e.target === lb) close(); });
+addEventListener('keydown', e => { if (!lb.classList.contains('on')) return; if (e.key === 'Escape') close(); if (e.key === 'ArrowLeft') step(-1); if (e.key === 'ArrowRight') step(1); });
+let tx = null;
+lb.addEventListener('touchstart', e => tx = e.touches[0].clientX, { passive: true });
+lb.addEventListener('touchend', e => { if (tx === null) return; const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1); tx = null; });
+}
+</script>
+</body>
+</html>
