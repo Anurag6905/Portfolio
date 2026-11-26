@@ -6,7 +6,7 @@
 <title>Anurag Desai</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="img/hero.webp">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1110'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23fff'%3Ead%3C/text%3E%3C/svg%3E">
 <style>
@@ -224,39 +224,27 @@ em{font-style:italic}
 .pv-faces b{position:absolute;left:6px;bottom:6px;font-size:13px;font-weight:500;padding:2px 7px;border-radius:99px;background:#fff}
 .pv-faces b.ok{color:#2f6b3f}.pv-faces b.bad{color:#b23a26}
 /* life */
-.life{position:relative;padding:clamp(40px,6vw,80px) 0 clamp(80px,10vw,140px);overflow:hidden}
-.trail-zone{position:relative;height:min(62vh,560px);min-height:380px;display:grid;place-items:center;text-align:center;cursor:crosshair;touch-action:pan-y;overflow:hidden;border-radius:28px;background:var(--soft);margin:0 max(4vw,16px)}
-.trail-zone h2{position:relative;z-index:100;margin:0;font:400 clamp(64px,12vw,190px)/.9 var(--serif);letter-spacing:-.03em;pointer-events:none;mix-blend-mode:difference;color:#fff}
-.trail-zone p{position:relative;z-index:100;margin:18px auto 0;max-width:460px;font-size:16px;color:var(--ink);pointer-events:none}
-.trail-zone .hint{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);z-index:5;font-size:13px;color:var(--muted);pointer-events:none;white-space:nowrap}
-.trail-img{position:absolute;left:0;top:0;width:180px;height:auto;border-radius:10px;opacity:0;pointer-events:none;z-index:2;will-change:transform,opacity;box-shadow:0 20px 40px -20px rgba(0,0,0,.45)}
-.board-bar{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin:clamp(50px,7vw,90px) 0 20px}
-.board-bar h3{margin:0;font:400 clamp(32px,4vw,52px)/1 var(--serif)}
-.board-bar p{margin:6px 0 0;color:var(--muted);font-size:15px}
-.board-btns{display:flex;gap:10px;flex-wrap:wrap}
-.board{position:relative;height:1080px;border-radius:28px;background:radial-gradient(circle at 1px 1px,rgba(15,17,16,.10) 1px,transparent 1.5px) 0 0/22px 22px,#fbfbf8;border:1px solid var(--line);overflow:hidden;touch-action:none}
-.pol{position:absolute;left:0;top:0;width:var(--w,220px);padding:10px 10px 0;background:#fff;border-radius:4px;box-shadow:0 14px 30px -14px rgba(15,17,16,.45),0 2px 4px rgba(15,17,16,.06);transform:translate(var(--x,0),var(--y,0)) rotate(var(--r,0deg));cursor:grab;user-select:none;-webkit-user-select:none;transition:box-shadow .3s;will-change:transform}
-.pol:hover{box-shadow:0 30px 50px -20px rgba(15,17,16,.5),0 2px 4px rgba(15,17,16,.06)}
-.pol.drag{cursor:grabbing;box-shadow:0 40px 70px -24px rgba(15,17,16,.55)}
-.pol img{display:block;width:100%;height:auto;border-radius:2px;pointer-events:none;-webkit-user-drag:none}
-.pol figcaption{padding:8px 2px 10px;font:500 21px/1.1 "Caveat",cursive;color:#3a3d3b;text-align:center}
-.pin{position:absolute;left:50%;top:-7px;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f07a64,#c2492e 60%,#8f2f1c);box-shadow:0 3px 4px rgba(0,0,0,.3)}
-.pol:nth-child(3n) .pin{background:radial-gradient(circle at 35% 35%,#7fb08c,#2f6b3f 60%,#1d4527)}
-.pol:nth-child(4n) .pin{background:radial-gradient(circle at 35% 35%,#f3d27a,#d39a2c 60%,#9a6b14)}
+.sec-h{margin:0 0 14px;font:400 clamp(44px,6vw,88px)/1 var(--serif);letter-spacing:-.02em}
+.sec-h em{color:#7b8d80}
+.life{padding:clamp(80px,10vw,140px) 0 clamp(80px,10vw,140px)}
+.life-sub{margin:0 0 clamp(28px,4vw,44px);max-width:520px;color:var(--muted);font-size:17px}
+.gal{columns:3 280px;column-gap:18px}
+.ph{position:relative;break-inside:avoid;margin:0 0 18px;border-radius:16px;overflow:hidden;background:var(--soft);cursor:zoom-in;outline:none}
+.ph img{display:block;width:100%;height:auto;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.ph:hover img,.ph:focus-visible img{transform:scale(1.04)}
+.ph figcaption{position:absolute;inset:auto 0 0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.55));color:#fff;font-size:15px;font-weight:500;opacity:0;transform:translateY(6px);transition:opacity .35s,transform .35s}
+.ph:hover figcaption,.ph:focus-visible figcaption{opacity:1;transform:none}
+.ph:focus-visible{box-shadow:0 0 0 3px var(--accent)}
+@media (max-width:760px){.gal{columns:2;column-gap:10px}.ph{margin-bottom:10px;border-radius:12px}.ph figcaption{display:none}}
 .lb{position:fixed;inset:0;z-index:200;display:none;place-items:center;background:rgba(12,14,13,.9);padding:60px 70px}
 .lb.on{display:grid}
 .lb figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:12px;max-width:100%;max-height:100%}
 .lb img{max-width:min(92vw,1100px);max-height:calc(100vh - 160px);border-radius:8px;object-fit:contain}
-.lb figcaption{color:#fff;font:500 26px/1 "Caveat",cursive}
+.lb figcaption{color:#fff;font-size:16px;font-weight:500}
 .lb button{position:absolute;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#fff;cursor:pointer;display:grid;place-items:center}
 .lb button svg{width:20px;height:20px}
 .lb .x{top:18px;right:18px}.lb .pv{left:18px;top:50%;margin-top:-24px}.lb .nx{right:18px;top:50%;margin-top:-24px}
-@media (max-width:760px){
-  .board{height:auto;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:30px 20px 34px;touch-action:auto;scrollbar-width:none}
-  .board::-webkit-scrollbar{display:none}
-  .pol{position:relative;flex:0 0 68vw;transform:rotate(var(--r,0deg));scroll-snap-align:center}
-  .lb{padding:60px 12px}.lb .pv{left:8px}.lb .nx{right:8px}
-}
+@media (max-width:760px){.lb{padding:60px 12px}.lb .pv{left:8px}.lb .nx{right:8px}}
 /* end */
 .end{position:relative;min-height:92vh;min-height:92svh;display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden}
 .end .bgi{position:absolute;inset:-10% 0;background:#1a1208}
@@ -370,19 +358,10 @@ footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;paddin
 </section>
 
 <section class="life" id="life">
-  <div class="trail-zone" id="trail">
-    <div>
-      <h2>off the clock.</h2>
-      <p>What I notice when I'm not building. Mostly skies, roads after rain, and old buildings.</p>
-    </div>
-    <span class="hint" id="trailHint">move your cursor around</span>
-  </div>
   <div class="wrap">
-    <div class="board-bar">
-      <div><h3 class="rv">From my camera roll</h3><p class="rv" id="boardHint">Drag them around, tap one to see it big.</p></div>
-      <div class="board-btns rv"><button class="btn light" id="shuffle" type="button">Shuffle <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg></button></div>
-    </div>
-    <div class="board" id="board"></div>
+    <h2 class="sec-h rv">From my <em>camera roll.</em></h2>
+    <p class="life-sub rv">What I notice when I'm not building. Mostly skies, roads after rain, and old buildings.</p>
+    <div class="gal" id="gal"></div>
   </div>
 </section>
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
@@ -624,111 +603,18 @@ $('#work').addEventListener('pointerleave', () => lastX = null);
 const hasG = !!window.gsap;
 /* life: photos */
 const caps = {1:"golden hour",2:"sunset over the city",3:"a plant and a window",4:"after the rain",5:"bar lights",6:"a ceiling full of stars",7:"low tide",8:"coconut break",9:"palm canopy",10:"city at sunset",11:"a cafe I liked",12:"arches",13:"looking up",14:"pink skies",15:"sunset through shades",16:"storm coming",17:"marble and clouds",18:"white marble, grey sky",19:"long walkway",20:"a tree and its twin",21:"grey afternoon",22:"old stone",23:"wet roads",24:"late-night desk",25:"misty morning",26:"sparks",27:"lights on the lawn",28:"concert night",29:"moon through clouds",30:"so green",31:"forest path",32:"where the sea curves",33:"road through the trees",34:"campus after rain",35:"a garden in bloom",36:"rain over the lawn"};
-const photos = Array.from({ length: 36 }, (_, i) => ({ src: `img/pins/p${String(i + 1).padStart(2, '0')}.webp`, cap: caps[i + 1] || '' }));
-const firstSet = [13, 15, 8, 18, 16, 4, 6, 10, 20, 26, 12, 24, 32, 9, 28, 35];
-
-/* trail */
-const zone = $('#trail'), noHover = matchMedia('(hover: none)').matches;
-if (zone && !reduce) {
-  const N = 14, trail = [];
-  for (let i = 0; i < N; i++) { const im = new Image(); im.className = 'trail-img'; im.alt = ''; im.decoding = 'async'; zone.appendChild(im); trail.push(im); }
-  let ti = 0, pi = 0, last = null;
-  const spawn = (x, y) => {
-    const im = trail[ti++ % N], ph = photos[pi++ % photos.length];
-    im.src = ph.src; im.style.zIndex = 2 + (ti % 60);
-    const base = zone.clientWidth < 600 ? 100 : 150, w = base + Math.random() * base * .4, rot = (Math.random() - .5) * 14;
-    im.style.width = w + 'px';
-    if (hasG) {
-      gsap.killTweensOf(im);
-      gsap.fromTo(im, { x: x - w / 2, y: y - w * .65, scale: .6, rotation: rot, opacity: 0 },
-        { scale: 1, opacity: 1, duration: .35, ease: 'power3.out' });
-      gsap.to(im, { opacity: 0, scale: .85, y: '+=30', duration: .7, delay: .75, ease: 'power2.in' });
-    } else { im.style.transform = `translate(${x - w / 2}px,${y - w * .65}px) rotate(${rot}deg)`; im.style.opacity = 1; setTimeout(() => im.style.opacity = 0, 900); }
-  };
-  const move = (x, y) => {
-    if (!last) { last = { x, y }; return; }
-    if (Math.hypot(x - last.x, y - last.y) > 90) { spawn(x, y); last = { x, y }; }
-  };
-  zone.addEventListener('pointermove', e => { if (e.pointerType !== 'mouse') return; const r = zone.getBoundingClientRect(); move(e.clientX - r.left, e.clientY - r.top); $('#trailHint').style.opacity = 0; });
-  zone.addEventListener('pointerleave', () => last = null);
-  if (noHover) {
-    $('#trailHint').textContent = '';
-    let t = 0, auto = false;
-    new IntersectionObserver(es => es.forEach(e => auto = e.isIntersecting)).observe(zone);
-    setInterval(() => {
-      if (!auto) return; t += 0.32;
-      const r = zone.getBoundingClientRect();
-      spawn(r.width / 2 + Math.cos(t) * r.width * .36, r.height / 2 + Math.sin(t * 1.7) * r.height * .3);
-    }, 420);
-  }
-}
-
-/* board */
-const board = $('#board');
-let shown = firstSet.slice();
-const isNarrow = () => innerWidth <= 760;
-let seed = 7;
-const rnd = () => { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; };
-function renderBoard() {
-  board.innerHTML = shown.map((n, k) => {
-    const p = photos[n - 1];
-    return `<figure class="pol" data-k="${k}" tabindex="0" role="button" aria-label="Open photo: ${p.cap}"><span class="pin"></span><img src="${p.src}" alt="${p.cap}" loading="lazy" draggable="false"><figcaption>${p.cap}</figcaption></figure>`;
-  }).join('');
-  layoutBoard(false);
-}
-function layoutBoard(animate) {
-  const pols = $$('.pol', board);
-  if (isNarrow()) { pols.forEach(p => { p.style.removeProperty('--x'); p.style.removeProperty('--y'); p.style.setProperty('--r', ((rnd() - .5) * 6).toFixed(1) + 'deg'); }); return; }
-  const W = board.clientWidth, H = board.clientHeight, cols = W > 1100 ? 6 : 5, rows = Math.ceil(pols.length / cols);
-  const cw = W / cols, rh = (H - 40) / rows;
-  pols.forEach((p, i) => {
-    const c = i % cols, r = Math.floor(i / cols), w = Math.min(196, cw * .82) * (.9 + rnd() * .16);
-    p.style.setProperty('--w', w + 'px');
-    const x = c * cw + (cw - w) / 2 + (rnd() - .5) * cw * .22, y = 24 + r * rh + (rnd() - .5) * rh * .18 + (c % 2) * rh * .12;
-    const X = Math.max(6, Math.min(W - w - 6, x)), Y = Math.max(14, Math.min(H - 300, y)), R = (rnd() - .5) * 14;
-    if (animate && hasG && !reduce) {
-      gsap.to(p, { '--x': X + 'px', '--y': Y + 'px', '--r': R + 'deg', duration: 1.1, delay: i * .025, ease: 'expo.out' });
-    } else { p.style.setProperty('--x', X + 'px'); p.style.setProperty('--y', Y + 'px'); p.style.setProperty('--r', R + 'deg'); }
-    p.style.zIndex = 1 + i;
-  });
-}
-renderBoard();
-if (isNarrow()) $('#boardHint').textContent = 'Swipe through, tap one to see it big.';
-let lastW = innerWidth;
-addEventListener('resize', () => { if (Math.abs(innerWidth - lastW) > 40) { lastW = innerWidth; layoutBoard(false); } });
-
-let zTop = 100;
-board.addEventListener('pointerdown', e => {
-  const p = e.target.closest('.pol'); if (!p) return;
-  if (isNarrow()) { p._tap = { x: e.clientX, y: e.clientY }; return; }
-  e.preventDefault();
-  const sx = e.clientX, sy = e.clientY, ox = parseFloat(p.style.getPropertyValue('--x')) || 0, oy = parseFloat(p.style.getPropertyValue('--y')) || 0;
-  let moved = false; p.style.zIndex = ++zTop; p.setPointerCapture(e.pointerId);
-  const mv = ev => {
-    const dx = ev.clientX - sx, dy = ev.clientY - sy;
-    if (!moved && Math.hypot(dx, dy) > 5) { moved = true; p.classList.add('drag'); }
-    if (moved) { p.style.setProperty('--x', ox + dx + 'px'); p.style.setProperty('--y', oy + dy + 'px'); }
-  };
-  const up = () => { p.removeEventListener('pointermove', mv); p.removeEventListener('pointerup', up); p.removeEventListener('pointercancel', up); p.classList.remove('drag'); if (!moved) openLb(+p.dataset.k); };
-  p.addEventListener('pointermove', mv); p.addEventListener('pointerup', up); p.addEventListener('pointercancel', up);
-});
-board.addEventListener('click', e => { if (!isNarrow()) return; const p = e.target.closest('.pol'); if (p) openLb(+p.dataset.k); });
-board.addEventListener('keydown', e => { const p = e.target.closest('.pol'); if (p && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); openLb(+p.dataset.k); } });
-
-$('#shuffle').addEventListener('click', () => {
-  const rest = photos.map((_, i) => i + 1).filter(n => !shown.includes(n));
-  for (let i = rest.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [rest[i], rest[j]] = [rest[j], rest[i]]; }
-  const pool = rest.concat(shown);
-  shown = pool.slice(0, 16);
-  seed = Math.floor(Math.random() * 10000);
-  const pols = $$('.pol', board);
-  pols.forEach((p, k) => { const ph = photos[shown[k] - 1]; const im = $('img', p); im.src = ph.src; im.alt = ph.cap; $('figcaption', p).textContent = ph.cap; p.setAttribute('aria-label', 'Open photo: ' + ph.cap); });
-  layoutBoard(true);
-});
+const dims = {1: [675, 900], 2: [900, 506], 3: [675, 900], 4: [675, 900], 5: [675, 900], 6: [675, 900], 7: [900, 675], 8: [675, 900], 9: [900, 675], 10: [900, 675], 11: [675, 900], 12: [675, 900], 13: [675, 900], 14: [675, 900], 15: [675, 900], 16: [701, 900], 17: [675, 900], 18: [675, 900], 19: [703, 900], 20: [736, 810], 21: [675, 900], 22: [675, 900], 23: [675, 900], 24: [736, 552], 25: [675, 900], 26: [735, 547], 27: [675, 900], 28: [506, 900], 29: [675, 900], 30: [703, 900], 31: [675, 900], 32: [668, 900], 33: [675, 900], 34: [675, 900], 35: [735, 699], 36: [675, 900]};
+const order = [13, 15, 8, 18, 16, 4, 6, 10, 20, 26, 12, 24, 32, 9, 28, 35];
+for (let n = 1; n <= 36; n++) if (!order.includes(n)) order.push(n);
+const photos = order.map(n => ({ src: `img/pins/p${String(n).padStart(2, '0')}.webp`, cap: caps[n] || '', w: dims[n][0], h: dims[n][1] }));
+const shown = photos.map((_, i) => i);
+$('#gal').innerHTML = photos.map((p, i) => `<figure class="ph rv" data-k="${i}" tabindex="0" role="button" aria-label="Open photo: ${p.cap}"><img src="${p.src}" alt="${p.cap}" width="${p.w}" height="${p.h}" loading="lazy" decoding="async"><figcaption>${p.cap}</figcaption></figure>`).join('');
+$('#gal').addEventListener('click', e => { const f = e.target.closest('.ph'); if (f) openLb(+f.dataset.k); });
+$('#gal').addEventListener('keydown', e => { const f = e.target.closest('.ph'); if (f && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); openLb(+f.dataset.k); } });
 
 /* lightbox */
 const lb = $('#lb'); let lbi = 0;
-function showLb() { const p = photos[shown[lbi] - 1]; $('#lbImg').src = p.src; $('#lbImg').alt = p.cap; $('#lbCap').textContent = p.cap; }
+function showLb() { const p = photos[shown[lbi]]; $('#lbImg').src = p.src; $('#lbImg').alt = p.cap; $('#lbCap').textContent = p.cap; }
 function openLb(k) { lbi = k; showLb(); lb.classList.add('on'); $('#lbX').focus(); }
 const closeLb = () => lb.classList.remove('on');
 $('#lbX').addEventListener('click', closeLb);
